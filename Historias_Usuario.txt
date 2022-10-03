@@ -95,4 +95,99 @@ PARA
 
 CRITERIOS DE CONFIRMACIÓN:
     Válida si es toro y/o vaca.
-    
+
+ 9)
+COMO
+    Segundo Jugador
+QUIERO
+    Saber si perdi el juego
+PARA
+    volver a jugar. 
+
+CRITERIOS DE CONFIRMACIÓN:
+    Se mostrará una pantalla con un mensaje que diga que perdí el juego .
+    El juego termina cuando el límite de intentos que es 8 llega a 0 si es que el segundo jugador no adivina el código secreto.
+
+
+
+10)
+COMO
+    Segundo Jugador
+QUIERO
+    Ver el código secreto
+PARA
+     Saber qué tan cerca estuve de adivinar o no.
+
+CRITERIOS DE CONFIRMACIÓN:
+    Una vez que el segundo jugador perdió el juego se mostrará por pantalla el código secreto que debía adivinar.
+
+
+
+11)
+COMO
+    Segundo Jugador
+QUIERO
+     Saber si gane el juego.
+PARA
+    volver a jugar o salir del juego.
+
+CRITERIOS DE CONFIRMACIÓN:
+    Se mostrará un mensaje que diga que ganó el juego.
+    El segundo jugador gana el juego si adivina el código secreto.
+
+
+
+
+HISTORIAS DE USUARIO EXTRAS:
+
+
+12)
+COMO
+    Primer Jugador
+QUIERO
+    Saber si ingrese un código secreto válido.
+PARA
+    Poder iniciar el juego.
+
+CRITERIOS DE CONFIRMACIÓN:
+    Se mostrará un mensaje que diga que caracteres son válidos y volver a ingresar retornando un mensaje de “Código secreto no válido”.
+
+
+
+13)
+COMO
+    Primer Jugador
+QUIERO
+    Saber si puedo ingresar letras.
+PARA
+    Poder iniciar el juego.
+
+CRITERIOS DE CONFIRMACIÓN:
+    El primer jugador debería poder ingresar letras.
+
+
+
+14)
+COMO
+    Primer Jugador
+QUIERO
+    Poder colocar la cantidad de intentos disponibles.
+PARA
+    Que el segundo jugador tenga intentos.
+
+CRITERIOS DE CONFIRMACIÓN:
+    La cantidad de intentos por defecto son 8.
+    El primer jugador puede colocar el límite de intentos.
+
+
+
+15)
+COMO
+    Primer Jugador
+QUIERO
+    Poder jugar en solitario
+PARA
+    Que la computadora genere un código secreto y asi empezar el juego.
+
+CRITERIOS DE CONFIRMACIÓN:
+    Como primer jugador puede jugar en modo solitario para que la computadora genere un código secreto aleatorio y comenzar el juego.   
