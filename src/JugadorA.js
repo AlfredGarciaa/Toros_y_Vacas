@@ -4,7 +4,6 @@ function codigoSecreto(codigo) {
         return "Codigo Vacio";    
     }
     return codigo;
-    ;
 }
 
 export default codigoSecreto;
