@@ -1,7 +1,7 @@
 import codigoSecreto from "./JugadorA.js"
 import recibirCodigoB from "./JugadorB.js"
 import separarCodigo from "./Separador.js"
-import compararCodigo from "./Vaca_Toro.js"
+import buscarVaca from "./Vaca_Toro.js"
 
 describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Alfred Garcia
@@ -20,7 +20,12 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
   it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {
     const codVec1 = separarCodigo(3412);
     const codVec2 = separarCodigo(7604);
-    expect(compararCodigo(codVec1,codVec2)).toEqual("*");
+    expect(buscarVaca(codVec1,codVec2)).toEqual("*");
+  });
+  it("Si jugador A ingresa numero 9231 y el B ingresa 1708 deberia retornar ** ", () => {
+    const codVec1 = separarCodigo(8231);
+    const codVec2 = separarCodigo(1708);
+    expect(buscarVaca(codVec1,codVec2)).toEqual("**");
   });
 // Marcelo Salinas
 });
