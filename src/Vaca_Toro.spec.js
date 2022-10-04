@@ -1,4 +1,4 @@
-import codigoSecreto from "./vaca_Toro.js"
+import codigoSecreto from "./Vaca_Toro.js"
 
 describe("CODIGO SECRETO", () => {
   //Alfred
@@ -16,5 +16,11 @@ describe("CODIGO SECRETO", () => {
   });
   
   //Marcelo
+  it("Cuando jugador B ingrese un codigo secreto vacio, deberia devolver codigo vacio ", () => {
+    expect(codigoSecreto("")).toEqual("Codigo Vacio");
+  });
+  it("Cuando jugador B ingrese un codigo secreto de 4 digitos, deberia devolver dicho codigo ", () => {
+    expect(codigoSecreto(2344)).toEqual(2344);
+  });
 
 });
