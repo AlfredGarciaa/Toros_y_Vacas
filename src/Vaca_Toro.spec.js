@@ -1,6 +1,7 @@
 import codigoSecreto from "./JugadorA.js"
 import recibirCodigoB from "./JugadorB.js"
-import separarCodigo from "./Vaca_Toro.js"
+import separarCodigo from "./Separador.js"
+import compararCodigo from "./Vaca_Toro.js"
 
 describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Alfred Garcia
@@ -16,6 +17,11 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
   it("Cuando jugador A ingrese un codigo secreto de 6 digitos, deberia devolver dicho codigo ", () => {
     expect(codigoSecreto(123456)).toEqual(123456);
   });
+  it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {
+    const codVec1 = separarCodigo(3412);
+    const codVec2 = separarCodigo(7604);
+    expect(compararCodigo(codVec1,codVec2)).toEqual("*");
+  });
 // Marcelo Salinas
 });
   
@@ -29,10 +35,11 @@ describe("'JUGADOR B'", () => {
 
 describe("'AMBOS JUGADORES'", () => {
 // Alfred Garcia
-  it("si jugador ingresa el numero 5786 este debe devolver el numero en vector [5,7,8,6]", () => {    
+  it("Si jugador ingresa el numero 5786 este debe devolver el numero en vector [5,7,8,6]", () => {    
     expect(separarCodigo(5786)).toEqual([5,7,8,6]);
   });
-  it("si jugador ingresa numero 457896 este debe devolver el numero en vector [4,5,7,8,9,6]", () => {    
+  it("Si jugador ingresa numero 457896 este debe devolver el numero en vector [4,5,7,8,9,6]", () => {    
     expect(separarCodigo(457896)).toEqual([4,5,7,8,9,6]);
   });
+// Marcelo Salinas
 });
