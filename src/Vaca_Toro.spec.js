@@ -1,4 +1,4 @@
-import codigoSecreto from "./vaca_Toro.js"
+import codigoSecreto from "./Vaca_Toro.js"
 
 describe("CODIGO SECRETO", () => {
   //Alfred
