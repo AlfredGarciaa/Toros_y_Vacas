@@ -1,10 +1,6 @@
-function codigoSecreto(codigo) {
+function recibirCodigo() {
 
-  if(codigo=="") {
-      return "Codigo Vacio";
-  }
-  return codigo;
-  
+
 }
 
-export default codigoSecreto;
+export default recibirCodigo;
