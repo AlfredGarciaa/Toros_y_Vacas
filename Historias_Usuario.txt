@@ -4,91 +4,91 @@
 COMO
     Primer jugador.
 QUIERO
-    Ingresar un código secreto que conste de 4 a 6 dígitos.
+    Ingresar un codigo secreto que conste de 4 a 6 digitos.
 PARA
-    Que el segundo jugador trate de adivinar el código ingresado.
+    Que el segundo jugador trate de adivinar el codigo ingresado.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        El primer jugador podrá ingresar el código secreto en un cuadro de texto.
-        El primer jugador puede presionar el botón de iniciar para que el segundo jugador adivine el código secreto.
+    CRITERIOS DE CONFIRMACION:
+       - El primer jugador podra ingresar el codigo secreto en un cuadro de texto.
+       - El primer jugador puede presionar el boton de iniciar para que el segundo jugador adivine el codigo secreto.
 
 2)
 COMO
     Primer jugador.
 QUIERO
-    Que el código secreto no sea visible.
+    Que el codigo secreto no sea visible.
 PARA
     Aumentar el grado de dificultad del segundo jugador.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        El código secreto ingresado en el cuadro de texto se verá con “****”.
+    CRITERIOS DE CONFIRMACION:
+       - El codigo secreto ingresado en el cuadro de texto se vera con “****”.
 
 3)
 COMO
     Segundo jugador.
 QUIERO
-    Saber la cantidad de dígitos del código secreto.
+    Saber la cantidad de digitos del codigo secreto.
 PARA
-    Tener una pista de la cantidad de dígitos del código que tengo que adivinar.
+    Tener una pista de la cantidad de digitos del codigo que tengo que adivinar.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Que muestre en pantalla la cantidad de dígitos del código secreto. 
+    CRITERIOS DE CONFIRMACION:
+       - Que muestre en pantalla la cantidad de digitos del codigo secreto. 
 
 4)
 COMO
     Segundo Jugador 
 QUIERO
-    Saber cuántos intentos tengo disponibles
+    Saber cuantos intentos tengo disponibles
 PARA
-    Que el juego sea más interesante según los intentos disponibles.
+    Que el juego sea mas interesante segun los intentos disponibles.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Se mostrará la cantidad de intentos que le queda al segundo jugador.
+    CRITERIOS DE CONFIRMACION:
+       - Se mostrara la cantidad de intentos que le queda al segundo jugador.
 
 5)
 COMO
     Segundo jugador.
 QUIERO
-     Escribir el primer intento del código secreto.
+     Escribir el primer intento del codigo secreto.
 PARA
-    Saber si adivina o no el código secreto.
+    Saber si adivina o no el codigo secreto.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Al ingresar el primer intento y si este es fallido que me muestre “Intentar de nuevo”
+    CRITERIOS DE CONFIRMACION:
+       - Al ingresar el primer intento y si este es fallido que me muestre “Intentar de nuevo”
 
 6)
 COMO
     Segundo jugador.
 QUIERO
-     Saber si la respuesta coincide con cualquier dígito del código secreto.
+     Saber si la respuesta coincide con cualquier dígito del codigo secreto.
 PARA
     Saber si es Vaca(coincidencias encontradas en digitos).
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Se mostrará un * las veces que un dígito coincida con el código secreto.
+    CRITERIOS DE CONFIRMACION:
+       - Se mostrara un * las veces que un digito coincida con el codigo secreto.
 
 7)
 COMO
     Segundo jugador.
 QUIERO
-    Saber si la respuesta coincide tanto en dígito como en posición.
+    Saber si la respuesta coincide tanto en digito como en posicion.
 PARA
-    Saber si es Toro(coincidencias en dígito y posición).
+    Saber si es Toro(coincidencias en digito y posicion).
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Valida si lo que ingresó el segundo jugador coincide con el mismo dígito y  la misma posición del dígito del código secreto.
-        Se mostrará un “!” las veces que coincide en dígito y la posición.
+    CRITERIOS DE CONFIRMACION:
+       - Valida si lo que ingreso el segundo jugador coincide con el mismo digito y  la misma posicion del digito del codigo secreto.
+       - Se mostrara un “!” las veces que coincide en digito y la posicion.
 
 8)
 COMO
     Segundo jugador.
 QUIERO
-    Saber si el código ingresado es vaca y/o Toro 
+    Saber si el codigo ingresado es vaca y/o Toro 
 PARA
-    Tener  una pista más detallada adivinando si me acerco al código secreto.
+    Tener  una pista mas detallada adivinando si me acerco al codigo secreto.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Válida si es toro y/o vaca.
+    CRITERIOS DE CONFIRMACION:
+       - Valida si es toro y/o vaca.
 
  9)
 COMO
@@ -98,20 +98,20 @@ QUIERO
 PARA
     volver a jugar. 
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Se mostrará una pantalla con un mensaje que diga que perdí el juego .
-        El juego termina cuando el límite de intentos que es 8 llega a 0 si es que el segundo jugador no adivina el código secreto.
+    CRITERIOS DE CONFIRMACION:
+       - Se mostrara una pantalla con un mensaje que diga que perdi el juego .
+       - El juego termina cuando el limite de intentos que es 8 llega a 0 si es que el segundo jugador no adivina el codigo secreto.
 
 10)
 COMO
     Segundo Jugador
 QUIERO
-    Ver el código secreto
+    Ver el codigo secreto
 PARA
-     Saber qué tan cerca estuve de adivinar o no.
+     Saber que tan cerca estuve de adivinar o no.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Una vez que el segundo jugador perdió el juego se mostrará por pantalla el código secreto que debía adivinar.
+    CRITERIOS DE CONFIRMACION:
+       - Una vez que el segundo jugador perdio el juego se mostrara por pantalla el codigo secreto que debia adivinar.
 
 11)
 COMO
@@ -121,23 +121,23 @@ QUIERO
 PARA
     volver a jugar o salir del juego.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Se mostrará un mensaje que diga que ganó el juego.
-        El segundo jugador gana el juego si adivina el código secreto.
+    CRITERIOS DE CONFIRMACION:
+       - Se mostrara un mensaje que diga que gano el juego.
+       - El segundo jugador gana el juego si adivina el codigo secreto.
 
 
-\\\\\\ HISTORIAS DE USUARIO EXTRAS //////
+\\\\\\ HISTORIAS DE USUARIO - FUTURAS IMPLEMENTACIONES //////
 
 12)
 COMO
     Primer Jugador
 QUIERO
-    Saber si ingrese un código secreto válido.
+    Saber si ingrese un codigo secreto valido.
 PARA
     Poder iniciar el juego.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Se mostrará un mensaje que diga que caracteres son válidos y volver a ingresar retornando un mensaje de “Código secreto no válido”.
+    CRITERIOS DE CONFIRMACION:
+       - Se mostrara un mensaje que diga que caracteres son validos y volver a ingresar retornando un mensaje de “Codigo secreto no valido”.
 
 13)
 COMO
@@ -147,8 +147,8 @@ QUIERO
 PARA
     Poder iniciar el juego.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        El primer jugador debería poder ingresar letras.
+    CRITERIOS DE CONFIRMACION:
+       - El primer jugador deberia poder ingresar letras.
 
 14)
 COMO
@@ -158,9 +158,9 @@ QUIERO
 PARA
     Que el segundo jugador tenga intentos.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        La cantidad de intentos por defecto son 8.
-        El primer jugador puede colocar el límite de intentos.
+    CRITERIOS DE CONFIRMACION:
+       - La cantidad de intentos por defecto son 8.
+       - El primer jugador puede colocar el limite de intentos.
 
 15)
 COMO
@@ -168,7 +168,7 @@ COMO
 QUIERO
     Poder jugar en solitario
 PARA
-    Que la computadora genere un código secreto y asi empezar el juego.
+    Que la computadora genere un codigo secreto y asi empezar el juego.
 
-    CRITERIOS DE CONFIRMACIÓN:
-        Como primer jugador puede jugar en modo solitario para que la computadora genere un código secreto aleatorio y comenzar el juego.   
+    CRITERIOS DE CONFIRMACION:
+       - Como primer jugador puede jugar en modo solitario para que la computadora genere un codigo secreto aleatorio y comenzar el juego.   
