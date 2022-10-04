@@ -1,6 +1,13 @@
 function separarCodigo(cod1) {
 
-  return [5,7,8,6]
+  let numString = String(cod1);
+  const array = []    
+  
+  for(var i = 0;i<numString.length;i++) {
+    let valInsert = +numString.charAt(i);
+    array.push(valInsert);        
+  }
+  return array;
 }
 
 export default separarCodigo;
