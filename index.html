@@ -3,7 +3,7 @@
     <h1>JUEGO VACAS Y TOROS</h1>
     <form id="JUEGO-VACASYTOROS-form">
       <label for="codigo-secreto">Ingrese codigo Secreto:</label>
-      <input type="number" id="codigo-secreto" />
+      <input type="number" id="codigo-secreto" oninvalid="alert('Codigosecreto Invalido');" required/>
       <label for="codigo-adiv">Ingrese codigo adiv:</label>
       <input type="number" id="codigo-adiv" />
       <input type="submit" value="Jugar" />
