@@ -35,7 +35,7 @@ PARA
     CRITERIOS DE CONFIRMACION:
        - Que muestre en pantalla la cantidad de digitos del codigo secreto. 
 
-4)
+*4)
 COMO
     Segundo Jugador 
 QUIERO
@@ -44,29 +44,30 @@ PARA
     Que el juego sea mas interesante segun los intentos disponibles.
 
     CRITERIOS DE CONFIRMACION:
-       - Se mostrara la cantidad de intentos que le queda al segundo jugador.
+       - Se mostrara la cantidad de intentos que le queda al segundo jugador.*
 
 5)
 COMO
     Segundo jugador.
 QUIERO
-     Escribir el primer intento del codigo secreto.
+     Escribir el intento del codigo secreto.
 PARA
     Saber si adivina o no el codigo secreto.
 
     CRITERIOS DE CONFIRMACION:
        - Al ingresar el primer intento y si este es fallido que me muestre “Intentar de nuevo”
+       !- Si coincide en todo ganaste.
 
 6)
 COMO
     Segundo jugador.
 QUIERO
-     Saber si la respuesta coincide con cualquier dígito del codigo secreto.
+     Poder ver si en mi intento existen Vacas(coincidencias encontradas en digitos ).
 PARA
-    Saber si es Vaca(coincidencias encontradas en digitos).
+    Saber si la respuesta coincide con cualquier dígito del codigo secreto .
 
     CRITERIOS DE CONFIRMACION:
-       - Se mostrara un * las veces que un digito coincida con el codigo secreto.
+       - !Se mostrara un * las veces que un digito coincida con el codigo secreto en diferentes posiciones(por ejemplo codSecreto 1234 adiv 5671 resultado "*").
 
 7)
 COMO
