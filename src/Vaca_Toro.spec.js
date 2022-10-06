@@ -28,6 +28,11 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     const codVec2 = separarCodigo(4065);
     expect(buscarToro(codVec1,codVec2)).toEqual("!");
   });
+  it("Si jugador A ingresa numero 1234 y el B ingresa 1530 deberia retornar !! ", () => {
+    const codVec1 = separarCodigo(1234);
+    const codVec2 = separarCodigo(1530);
+    expect(buscarToro(codVec1,codVec2)).toEqual("!!");
+  });
 // Marcelo Salinas
 });
   
