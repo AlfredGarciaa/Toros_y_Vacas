@@ -21,7 +21,8 @@ PARA
     Aumentar el grado de dificultad del segundo jugador.
 
     CRITERIOS DE CONFIRMACION:
-       - El codigo secreto ingresado en el cuadro de texto se vera con “****”.
+       - CAMBIAR NO ASTERISCOS POR CONFUCION El codigo secreto ingresado en el cuadro de texto se vera con “****”.
+       - EL Numero de astericos corresponde con la cantidad de digitos que se ingreso.!borrar historia de usuario 3!
 
 3)
 COMO
