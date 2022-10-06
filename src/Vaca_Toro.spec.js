@@ -47,14 +47,14 @@ describe("'AMBOS JUGADORES'", () => {
     expect(separarCodigo(457896)).toEqual([4,5,7,8,9,6]);
   });
 // Marcelo Salinas
-it("Si jugador A ingresa numero 3412 y el B ingresa 7406 deberia retornar *! ", () => {
-  const codVec1 = separarCodigo(3412);
-  const codVec2 = separarCodigo(7406);
-  expect(buscarVacayToro(codVec1,codVec2)).toEqual("*!");
+it("Si jugador A ingresa numero 1234 y el B ingresa 1567 deberia retornar ! ", () => {
+  const codVec1 = separarCodigo(1234);
+  const codVec2 = separarCodigo(1567);
+  expect(buscarVacayToro(codVec1,codVec2)).toEqual("!");
 });
-it("Si jugador A ingresa numero 9231 y el B ingresa 7081 deberia retornar *! ", () => {
-  const codVec1 = separarCodigo(8231);
-  const codVec2 = separarCodigo(7081);
-  expect(buscarVacayToro(codVec1,codVec2)).toEqual("*!");
+it("Si jugador A ingresa numero 44789 y el B ingresa 44123 deberia retornar *! ", () => {
+  const codVec1 = separarCodigo(44789);
+  const codVec2 = separarCodigo(44123);
+  expect(buscarVacayToro(codVec1,codVec2)).toEqual("!!");
 });
 });
