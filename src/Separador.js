@@ -1,4 +1,4 @@
-function separarCodigo(cod1) {
+function Separar_Codigo(cod1) {
 
     let numString = String(cod1);
     const array = []    
@@ -10,4 +10,4 @@ function separarCodigo(cod1) {
     return array;
 }
 
-export default separarCodigo;
+export default Separar_Codigo;

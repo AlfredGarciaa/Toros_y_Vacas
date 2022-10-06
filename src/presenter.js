@@ -1,4 +1,4 @@
-import sumar from "./Vaca_Toro";
+//import sumar from "./Vaca_Toro.js";
 
 const first = document.querySelector("#primer-numero");
 const second = document.querySelector("#segundo-numero");

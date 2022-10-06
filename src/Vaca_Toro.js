@@ -1,26 +1,18 @@
-function buscarVacaToro(vec1,vec2){
+function Buscar_Vaca_Toro(vec1,vec2) {
+
   let resp="";
-  for(var i = 0;i<vec1.length;i++){
-      if(vec1[i]==vec2[i])
-          resp = resp + "!";
-      else{
-          if(vec1.includes(vec2[i]))
-              resp = resp + "*";
-      }    
+
+  for(var i = 0;i<vec1.length;i++) {
+    if(vec1[i]==vec2[i]) {
+      resp = resp + "!";
+    }
+    else {
+      if(vec1.includes(vec2[i])) {
+        resp = resp + "*";
+      }
+    }    
   }
   return resp;
 }
-export default buscarVacaToro;
 
-/*function buscarVacayToro(vec1,vec2) {
-
-  var res1=[],res2=[],ResTotal=[];
-
-  res1+=buscarVaca(vec1,vec2);
-  res2+=buscarToro(vec1,vec2);
-  ResTotal=res1.concat(res2);
-  return ResTotal;
-}*/
-
-//export default buscarVacayToro;
-export { buscarVacaToro };
+export default Buscar_Vaca_Toro;

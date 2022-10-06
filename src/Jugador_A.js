@@ -1,4 +1,4 @@
-function codigoSecreto(codigo) {
+function Codigo_Secreto(codigo) {
 
     if(codigo=="") {
         return "Codigo Vacio";    
@@ -6,4 +6,4 @@ function codigoSecreto(codigo) {
     return codigo;
 }
 
-export default codigoSecreto;
+export default Codigo_Secreto;
