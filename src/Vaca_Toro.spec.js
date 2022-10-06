@@ -1,7 +1,8 @@
 import codigoSecreto from "./JugadorA.js"
 import recibirCodigoB from "./JugadorB.js"
 import separarCodigo from "./Separador.js"
-import buscarVacayToro from "./Vaca_Toro.js"
+//import buscarVacayToro from "./Vaca_Toro.js"
+import { buscarToro, buscarVaca } from "./Vaca_Toro.js"
 
 describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Alfred Garcia
@@ -20,12 +21,12 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
   it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {
     const codVec1 = separarCodigo(3412);
     const codVec2 = separarCodigo(7604);
-    expect(buscarVacayToro(codVec1,codVec2)).toEqual("*");
+    expect(buscarVaca(codVec1,codVec2)).toEqual("*");
   });
-  it("Si jugador A ingresa numero 9231 y el B ingresa 1708 deberia retornar ** ", () => {
-    const codVec1 = separarCodigo(8231);
-    const codVec2 = separarCodigo(1708);
-    expect(buscarVacayToro(codVec1,codVec2)).toEqual("**");
+  it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {
+    const codVec1 = separarCodigo(8125);
+    const codVec2 = separarCodigo(4065);
+    expect(buscarToro(codVec1,codVec2)).toEqual("!");
   });
 // Marcelo Salinas
 });
@@ -47,14 +48,14 @@ describe("'AMBOS JUGADORES'", () => {
     expect(separarCodigo(457896)).toEqual([4,5,7,8,9,6]);
   });
 // Marcelo Salinas
-it("Si jugador A ingresa numero 1234 y el B ingresa 1567 deberia retornar ! ", () => {
-  const codVec1 = separarCodigo(1234);
-  const codVec2 = separarCodigo(1567);
-  expect(buscarVacayToro(codVec1,codVec2)).toEqual("!");
-});
-it("Si jugador A ingresa numero 44789 y el B ingresa 44123 deberia retornar *! ", () => {
-  const codVec1 = separarCodigo(44789);
-  const codVec2 = separarCodigo(44123);
-  expect(buscarVacayToro(codVec1,codVec2)).toEqual("!!");
-});
+  /*it("Si jugador A ingresa numero 1234 y el B ingresa 1567 deberia retornar ! ", () => {
+    const codVec1 = separarCodigo(1234);
+    const codVec2 = separarCodigo(1567);
+    expect(buscarVacayToro(codVec1,codVec2)).toEqual("!");
+  });
+  it("Si jugador A ingresa numero 44789 y el B ingresa 44123 deberia retornar *! ", () => {
+    const codVec1 = separarCodigo(44789);
+    const codVec2 = separarCodigo(44123);
+    expect(buscarVacayToro(codVec1,codVec2)).toEqual("!!");
+  });*/
 });
