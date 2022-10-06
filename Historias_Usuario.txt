@@ -67,7 +67,7 @@ PARA
     Saber si la respuesta coincide con cualquier dígito del codigo secreto .
 
     CRITERIOS DE CONFIRMACION:
-       - Se mostrara un * las veces que un digito coincida con el codigo secreto en diferentes posiciones(por ejemplo codSecreto 1234 adiv 5671 resultado "*").
+       - !Se mostrara un * las veces que un digito coincida con el codigo secreto en diferentes posiciones(por ejemplo codSecreto 1234 adiv 5671 resultado "*").
 
 7)
 COMO
