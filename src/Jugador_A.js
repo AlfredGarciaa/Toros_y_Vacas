@@ -1,6 +1,6 @@
 function Codigo_Secreto(codigo) {
 
-    if(codigo=="") {
+    if(codigo == "") {
         return "Codigo Vacio";    
     }
     return codigo;

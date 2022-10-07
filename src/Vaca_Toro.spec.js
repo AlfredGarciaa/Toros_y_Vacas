@@ -22,6 +22,21 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     const codVec2 = Separar_Codigo(7604);
     expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("*");
   });
+  it("Si jugador A ingresa numero 12334  y el B ingresa 36589 deberia retornar * ", () => {
+    const codVec1 = Separar_Codigo(12334);
+    const codVec2 = Separar_Codigo(36589);
+    expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("*");
+  });
+  it("Si jugador A ingresa numero 1111  y el B ingresa 1234 deberia retornar ! ", () => {
+    const codVec1 = Separar_Codigo(1111);
+    const codVec2 = Separar_Codigo(1234);
+    expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("!");
+  });
+  it("Si jugador A ingresa numero 9231 y el B ingresa 1708 deberia retornar ** ", () => {
+    const codVec1 = Separar_Codigo(8231);
+    const codVec2 = Separar_Codigo(1708);
+    expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("**");
+  });
 // Marcelo Salinas
   it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {
     const codVec1 = Separar_Codigo(8125);
