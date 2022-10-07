@@ -35,7 +35,7 @@ PARA
     CRITERIOS DE CONFIRMACION:
        - Que muestre en pantalla la cantidad de digitos del codigo secreto. 
 
-*4)
+4)
 COMO
     Segundo Jugador 
 QUIERO
@@ -44,7 +44,7 @@ PARA
     Que el juego sea mas interesante segun los intentos disponibles.
 
     CRITERIOS DE CONFIRMACION:
-       - Se mostrara la cantidad de intentos que le queda al segundo jugador.*
+       - Se mostrara la cantidad de intentos que le queda al segundo jugador.
 
 5)
 COMO
