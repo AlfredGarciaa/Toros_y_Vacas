@@ -1,4 +1,4 @@
-function Codigo_Secreto(codigo) {
+function Validar_Codigo(codigo) {
 
     if(codigo == "") {
         return "Codigo Vacio";    
@@ -6,4 +6,4 @@ function Codigo_Secreto(codigo) {
     return codigo;
 }
 
-export default Codigo_Secreto;
+export default Validar_Codigo;
