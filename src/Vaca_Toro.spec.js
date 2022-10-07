@@ -37,6 +37,11 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     const codVec2 = Separar_Codigo(1708);
     expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("**");
   });
+  it("Si jugador A ingresa numero 4723  y el B ingresa vacio deberia retornar ingresas codigo vacio ", () => {
+    const codVec1 = Separar_Codigo(4721);
+    const codVec2 = Separar_Codigo("");
+    expect(Buscar_Vaca_Toro(codVec1,codVec2)).toEqual("ingresaste codigo vacio");
+  });
 // Marcelo Salinas
   it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {
     const codVec1 = Separar_Codigo(8125);

@@ -12,6 +12,9 @@ function Buscar_Vaca_Toro(vec1,vec2) {
       }
     }    
   }
+  if(vec2 == "") {
+    resp = "ingresaste codigo vacio";
+  }
   return resp;
 }
 
