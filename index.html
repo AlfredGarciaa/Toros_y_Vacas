@@ -1,15 +1,47 @@
 <html>
   <body>
-    <h1 style="border: ridge #0f0fef 1px;" style="color:#FF0000">JUEGO VACAS Y TOROS </h1>
-    <form id="JUEGO-VACASYTOROS-form">
-      <label for="codigo-secreto">Ingrese codigo Secreto:</label>
-      <input type="number" id="codigo-secreto" oninvalid="alert('Codigo Secreto Invalido.');" required/>
-      <label for="codigo-adiv">Ingrese codigo adiv:</label>
-      <input type="number" id="codigo-adiv" />
-      <input type="submit" value="Jugar" />
-    </form>
-    <div id="resultado-div"></div>
+    <h1>!* TOROS Y VACAS *!</h1>
+    <style>
+      h1 {
 
+        text-align: center;
+        background-color: aquamarine;
+      }
+    </style>
+    <form id="inicio-form">
+      <label for="intentos">Ingresar Intentos:</label>
+      <input type="number" id="intentos" /><br>
+
+      <label for="codigo-secreto">Codigo Secreto:</label>
+      <input type="number" id="codigo-secreto" />
+      <input type="submit" value="Iniciar" /><br>
+    </form>
+
+    <form id="intento-form">
+      <label for="intento">Intento:</label>
+      <input type="number" id="intento" />
+      <input type="submit" value="Adivinar" />
+    </form>
+
+    <form id="respuesta-form">
+      <p>Respuesta:</p>
+        <div id="resultado-div"></div>
+        <input type="submit" value="Volver  jugar" />
+    </form>
+
+    <style>
+      form {
+
+        width: 400px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: aqua;
+      }
+      body {
+        
+        background-image: url(https://statics.forbesargentina.com/2021/09/614b47f0cc502.jpg);
+      }
+    </style>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
