@@ -1,6 +1,3 @@
-import Separar_Codigo from "./Separador.js"
-import Recibir_Codigo from "./Jugador_A.js"
-
 class Vaca_Toro {
 
   Mensaje_Felicidades() {
@@ -11,8 +8,8 @@ class Vaca_Toro {
   Buscar_Vaca_Toro(codigoSecreto,codigoIngresado) { 
 
     let coonf = false;
-    const codVec1 = Separar_Codigo(codigoSecreto);
-    const codVec2 = Separar_Codigo(codigoIngresado);
+    const codVec1 = this.Separar_Codigo(codigoSecreto);
+    const codVec2 = this.Separar_Codigo(codigoIngresado);
     let output = "";
 
     for(var i=0; i<codVec1.length; i++) {
@@ -44,18 +41,38 @@ class Vaca_Toro {
 
   Comparar_Codigo(codigoSecreto, codigoIngresado) {
 
-    let output = Recibir_Codigo(codigoIngresado)
+    let output = this.Validar_Codigo(codigoIngresado)
 
     if(codigoSecreto == codigoIngresado) {
       output = this.Mensaje_Felicidades();
     }
     if(output != "Codigo Vacio" && codigoSecreto!=codigoIngresado) {
       output = this.Buscar_Vaca_Toro(codigoSecreto,codigoIngresado);            
-      if(output != "Codigo imcompatible") {               
-        output = this.Unir(Separar_Codigo(output).sort()) 
+      if(output != "Codigo imcompatible") {       
+        output = this.Unir(this.Separar_Codigo(output).sort())         
       }
     }
     return output;
+  }
+
+  Separar_Codigo(codigoSecreto) {
+
+    let numString = String(codigoSecreto);
+    const array = []    
+
+    for(var i = 0; i<numString.length; i++) {
+      let valInsert = numString.charAt(i);
+      array.push(valInsert);        
+    }
+    return array;
+  }
+
+  Validar_Codigo(codigo) {
+
+    if(codigo == "") {
+      return "Codigo Vacio";    
+    }
+    return codigo;
   }
 }
 
