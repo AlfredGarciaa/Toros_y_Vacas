@@ -19,14 +19,19 @@ form.addEventListener("submit", (event) => {
 });
 
 form2.addEventListener("submit", (event) => {
-  
+
   event.preventDefault();
   const firstNumber = Number.parseInt(intent.value);
   let juego = new Vaca_Toro();
   let resultado = juego.Comparar_Codigo(secreto,firstNumber);
+  intentos--;
 
-  div.innerHTML = "<p>" + resultado + " Te quedan: " + intentos-- + " intentos" + "</p>";
-  if(intentos==0) {
-    div.innerHTML = "<p>" + "Perdiste el juego por falta de intentos" +" El codigo secreto era: "+ secreto +"</p>";
+  if(intentos == 0) {
+
+    div.innerHTML = "<p>" + "Perdiste el juego por falta de intentos. " +" El codigo secreto era: "+ secreto +"</p>";
+  }
+  else {
+
+    div.innerHTML = "<p>" + resultado + " Te quedan: " + intentos + " intentos" + "</p>";
   }
 });
