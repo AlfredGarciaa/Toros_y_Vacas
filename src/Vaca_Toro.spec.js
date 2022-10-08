@@ -45,6 +45,10 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     let juego = new Vaca_Toro();    
     expect(juego.Comparar_Codigo(32421,987789)).toEqual("Codigo imcompatible");
   });
+  it("Si jugador A ingresa numero a2b1c  y el B ingresa a2b1c deberia retornar 'Felicidades Adivinaste El codigo'", () => {
+    let juego = new Vaca_Toro();    
+    expect(juego.Comparar_Codigo('12b1c','a2t1c')).toEqual("!!!");
+  });
 // Marcelo Salinas
   it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {  
     let juego = new Vaca_Toro();  
@@ -71,10 +75,10 @@ describe("'JUGADOR B'", () => {
 describe("'AMBOS JUGADORES'", () => {
 // Alfred Garcia
   it("Si jugador ingresa el numero 5786 este debe devolver el numero en vector [5,7,8,6]", () => {    
-    expect(Separar_Codigo(5786)).toEqual([5,7,8,6]);
+    expect(Separar_Codigo(5786)).toEqual(["5", "7", "8", "6"]);
   });
   it("Si jugador ingresa numero 457896 este debe devolver el numero en vector [4,5,7,8,9,6]", () => {    
-    expect(Separar_Codigo(457896)).toEqual([4,5,7,8,9,6]);
+    expect(Separar_Codigo(457896)).toEqual(["4", "5", "7", "8", "9", "6"]);
   });
 // Marcelo Salinas
 });
