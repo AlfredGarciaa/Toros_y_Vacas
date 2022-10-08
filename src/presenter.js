@@ -2,7 +2,7 @@
 
 const codigoSecreto = document.querySelector("codigo-secreto");
 const intent = document.querySelector("#intento");
-const form = document.querySelector("#adivinar-form");
+const form = document.querySelector("#inicio-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
