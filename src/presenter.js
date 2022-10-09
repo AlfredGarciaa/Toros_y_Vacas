@@ -24,7 +24,7 @@ form2.addEventListener("submit", (event) => {
   const firstNumber = Number.parseInt(intent.value);
   let juego = new Vaca_Toro();
   let resultado = juego.Comparar_Codigo(secreto,firstNumber);
-  intentos--;
+  intentos--
 
   if(intentos == 0) {
 
