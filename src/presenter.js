@@ -1,12 +1,13 @@
 import Vaca_Toro from "./Vaca_Toro.js";
-//import Juego from "./Game.js";
 
 const numIntentos = document.querySelector("#intentos");
 const codigoSecreto = document.querySelector("#codigo-secreto");
 const intent = document.querySelector("#intento");
 const form = document.querySelector("#inicio-form");
 const form2 = document.querySelector("#intento-form");
+const form3 = document.querySelector("#random-code");
 const div = document.querySelector("#resultado-div");
+const div2 = document.querySelector("#random-div");
 
 let secreto;
 let intentos;
@@ -16,11 +17,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   secreto = codigoSecreto.value;
   intentos = Number.parseInt(numIntentos.value);
-
-  if(intentos == [isNaN]) {
-
-    intentos = 10;
-  }
   form.reset();
 });
 
@@ -34,7 +30,7 @@ form2.addEventListener("submit", (event) => {
 
   if(intentos == 0) {
 
-    div.innerHTML = "<p>" + "Perdiste el juego por falta de intentos. " +" El codigo secreto era: "+ secreto +"</p>";
+    div.innerHTML = "<p>" + " Perdiste :( " + " El codigo secreto era: " + secreto + "</p>";
   }
   else {
 
