@@ -1,4 +1,5 @@
 import Vaca_Toro from "./Vaca_Toro.js";
+//import Juego from "./Game.js";
 
 const numIntentos = document.querySelector("#intentos");
 const codigoSecreto = document.querySelector("#codigo-secreto");
@@ -13,15 +14,20 @@ let intentos;
 form.addEventListener("submit", (event) => {
 
   event.preventDefault();
-  secreto = Number.parseInt(codigoSecreto.value);
+  secreto = codigoSecreto.value;
   intentos = Number.parseInt(numIntentos.value);
+
+  if(intentos == [isNaN]) {
+
+    intentos = 10;
+  }
   form.reset();
 });
 
 form2.addEventListener("submit", (event) => {
   
   event.preventDefault();
-  const firstNumber = Number.parseInt(intent.value);
+  const firstNumber = intent.value;
   let juego = new Vaca_Toro();
   let resultado = juego.Comparar_Codigo(secreto,firstNumber);
   intentos--
