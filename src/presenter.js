@@ -37,3 +37,7 @@ form2.addEventListener("submit", (event) => {
     div.innerHTML = "<p>" + resultado + " Te quedan: " + intentos + " intentos" + "</p>";
   }
 });
+form3.addEventListener("submit", (event) => {
+
+
+});
