@@ -9,6 +9,8 @@ const form2 = document.querySelector("#intento-form");
 const form3 = document.querySelector("#aleatorio-form");
 const div = document.querySelector("#resultado-div");
 
+const formReiniciar = document.querySelector("#reiniciar-form");
+
 let secreto;
 let intentos;
 
@@ -44,4 +46,12 @@ form3.addEventListener("submit", (event) => {
   secreto = Codigo_Secreto_Random();
   intentos = Number.parseInt(numIntentos.value);
   form.reset();
+});
+
+
+formReiniciar.addEventListener("submit", (event) => 
+{
+  event.preventDefault();
+  location.reload();
+  alert("(Pantalla Nueva).");
 });
