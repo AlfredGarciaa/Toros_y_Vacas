@@ -1,4 +1,5 @@
 import Vaca_Toro from "./Vaca_Toro.js"
+import Busca_Primos from "./BuscarPrimos.js"
 
 describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Alfred Garcia
@@ -92,6 +93,7 @@ describe("'FUNCION TERNERA'", () => {
 
 describe("'FUNCION BISONTE'", () => {
   it("Si jugador A ingresa numero 9165  buscando primos deberia retornar '%'", () => {    
-    expect(buscaPrimos(9165)).toEqual("%");
+    let juego = new Vaca_Toro(); 
+    expect(Busca_Primos(9165)).toEqual("%");
   });
 });
