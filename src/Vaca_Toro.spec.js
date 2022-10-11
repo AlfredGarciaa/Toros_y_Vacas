@@ -18,10 +18,6 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     let juego = new Vaca_Toro
     expect(juego.Validar_Codigo(123456)).toEqual(123456);
   });
-  it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {    
-    let juego = new Vaca_Toro();
-    expect(juego.Comparar_Codigo(3412,7604)).toEqual("#*");
-  });
   it("Si jugador A ingresa numero 12334  y el B ingresa 36589 deberia retornar * ", () => {    
     let juego = new Vaca_Toro();
     expect(juego.Comparar_Codigo(12334,36589)).toEqual("*");
@@ -51,17 +47,9 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
     expect(juego.Comparar_Codigo('12b1c','a2t1c')).toEqual("!!!");
   });
 // Marcelo Salinas
-  it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {  
-    let juego = new Vaca_Toro();  
-    expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
-  });
   it("Si jugador A ingresa numero 1234 y el B ingresa 1530 deberia retornar !! ", () => {    
     let juego = new Vaca_Toro();
     expect(juego.Comparar_Codigo(1234,1530)).toEqual("!!");
-  });
-  it("Si jugador A ingresa numero 9165 y el B ingresa 9053 deberia retornar !* ", () => {    
-    let juego = new Vaca_Toro();
-    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!##*");
   });
 });
   
@@ -88,8 +76,16 @@ describe("'AMBOS JUGADORES'", () => {
 });
 
 describe("'FUNCION TERNERA'", () => {
-  it("Si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!*#'", () => {
+  it("Si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!##*'", () => {
     let juego = new Vaca_Toro();    
     expect(juego.Comparar_Codigo(9165,9053)).toEqual("!##*");
+  });
+  it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar #*", () => {    
+    let juego = new Vaca_Toro();
+    expect(juego.Comparar_Codigo(3412,7604)).toEqual("#*");
+  });
+  it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar !#", () => {  
+    let juego = new Vaca_Toro();  
+    expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
   });
 });

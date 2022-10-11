@@ -5,7 +5,7 @@ class Vaca_Toro {
     return "Felicidades Adivinaste El codigo";
   }
   
-  Buscar_Vaca_Toro(codigoSecreto,codigoIngresado) {  
+  Buscar_Vaca_Toro_Ternera(codigoSecreto,codigoIngresado) {  
 
     let coonf = false;
     const codVec1 = this.Separar_Codigo(codigoSecreto);
@@ -23,11 +23,14 @@ class Vaca_Toro {
           coonf = true;
         }                                    
       }
+
+      // FUNCION PARA BUSCAR TERNERA \\
       if((codVec1[i]+1 == codVec2[i]) || (codVec1[i]-1 == codVec2[i])) {
 
         output += "#";
         coonf = true;
       }    
+      
     }    
     if(coonf == false) {
       output = "Codigo imcompatible";
@@ -53,7 +56,7 @@ class Vaca_Toro {
       output = this.Mensaje_Felicidades();
     }
     if(output != "Codigo Vacio" && codigoSecreto!=codigoIngresado) {
-      output = this.Buscar_Vaca_Toro(codigoSecreto,codigoIngresado);            
+      output = this.Buscar_Vaca_Toro_Ternera(codigoSecreto,codigoIngresado);            
       if(output != "Codigo imcompatible") {              
         output = this.Unir(this.Separar_Codigo(output).sort()) 
       }
