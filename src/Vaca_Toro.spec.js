@@ -84,5 +84,9 @@ describe("'AMBOS JUGADORES'", () => {
     let juego = new Vaca_Toro
     expect(juego.Separar_Codigo(457896)).toEqual(["4", "5", "7", "8", "9", "6"]);
   });
-// Marcelo Salinas
+// Marcelo Salinas Examen
+it("Si jugador A ingresa numero 3456 y el B ingresa 4619 deberia retornar !* ", () => {    
+  let juego = new Vaca_Toro();
+  expect(juego.Comparar_Codigo(3456,4619)).toEqual("##**");
+});
 });

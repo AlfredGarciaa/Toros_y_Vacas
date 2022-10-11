@@ -13,6 +13,12 @@ class Vaca_Toro {
     let output = "";
 
     for(var i=0; i<codVec1.length; i++) {
+      for(var j=0; j<codVec2.length; j++){
+        if(codVec2[j]>codVec1[i] && codVec2+1[j]<codVec1[i]){
+          output += "#";
+          coonf=true;
+        }
+      }
       if(codVec1[i] == codVec2[i]){
         output += "!";
         coonf = true;
@@ -21,12 +27,22 @@ class Vaca_Toro {
         if(codVec1.includes(codVec2[i])) {
           output += "*";
           coonf = true;
-        }                                    
+        }                                
       }    
     }    
     if(coonf == false) {
       output = "Codigo imcompatible";
     }                
+    /*for(var k=0;k<codVec1.length;k++){
+      for (var x = 2; x < codVec1[i] / 2; x++) {
+        if (codVec1[k] == 0 || codVec1[k] == 2 || codVec1[k] == 4 && codVec1[i]  % x == 0){
+          output +=""
+          coonf=true;
+        };
+      }
+      return output+="%"
+    }*/
+      
     return output;
   }
 
