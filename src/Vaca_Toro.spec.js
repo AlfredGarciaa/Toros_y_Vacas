@@ -1,5 +1,4 @@
 import Vaca_Toro from "./Vaca_Toro.js"
-import Busca_Primos from "./BuscarPrimos.js"
 
 describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Alfred Garcia
