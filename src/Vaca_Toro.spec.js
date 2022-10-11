@@ -89,3 +89,9 @@ describe("'FUNCION TERNERA'", () => {
     expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
   });
 });
+
+describe("'FUNCION BISONTE'", () => {
+  it("Si jugador A ingresa numero 9165  buscando primos deberia retornar '%'", () => {    
+    expect(buscaPrimos(9165)).toEqual("%");
+  });
+});
