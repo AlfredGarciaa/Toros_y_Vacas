@@ -3,11 +3,11 @@ import Vaca_Toro from "./Vaca_Toro.js";
 const numIntentos = document.querySelector("#intentos");
 const codigoSecreto = document.querySelector("#codigo-secreto");
 const intent = document.querySelector("#intento");
+
 const form = document.querySelector("#inicio-form");
 const form2 = document.querySelector("#intento-form");
-const form3 = document.querySelector("#random-code");
+const form3 = document.querySelector("#aleatorio-form");
 const div = document.querySelector("#resultado-div");
-const div2 = document.querySelector("#random-div");
 
 let secreto;
 let intentos;
@@ -37,7 +37,11 @@ form2.addEventListener("submit", (event) => {
     div.innerHTML = "<p>" + resultado + " Te quedan: " + intentos + " intentos" + "</p>";
   }
 });
+
 form3.addEventListener("submit", (event) => {
 
-
+  event.preventDefault();
+  secreto = Codigo_Secreto_Random();
+  intentos = Number.parseInt(numIntentos.value);
+  form.reset();
 });

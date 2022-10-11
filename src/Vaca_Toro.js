@@ -75,8 +75,14 @@ class Vaca_Toro {
     }
     return codigo;
   }
-  codigo_secretoRdm(codigoSecreto){
+
+  Codigo_Secreto_Random() {
+
+    let codigoSecreto;
+
     codigoSecreto = Math.floor(Math.random()*(100000-1000+1)+1000);
+    
+    return codigoSecreto;
   }
 }
 
