@@ -86,3 +86,10 @@ describe("'AMBOS JUGADORES'", () => {
   });
 // Marcelo Salinas
 });
+
+describe("'FUNCION TERNERA'", () => {
+  it("Si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!*#'", () => {
+    let juego = new Vaca_Toro();    
+    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!*#");
+  });
+});
