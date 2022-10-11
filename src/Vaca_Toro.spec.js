@@ -20,7 +20,7 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
   });
   it("Si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {    
     let juego = new Vaca_Toro();
-    expect(juego.Comparar_Codigo(3412,7604)).toEqual("*");
+    expect(juego.Comparar_Codigo(3412,7604)).toEqual("#*");
   });
   it("Si jugador A ingresa numero 12334  y el B ingresa 36589 deberia retornar * ", () => {    
     let juego = new Vaca_Toro();
@@ -53,7 +53,7 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
 // Marcelo Salinas
   it("Si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {  
     let juego = new Vaca_Toro();  
-    expect(juego.Comparar_Codigo(8125,4065)).toEqual("!");
+    expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
   });
   it("Si jugador A ingresa numero 1234 y el B ingresa 1530 deberia retornar !! ", () => {    
     let juego = new Vaca_Toro();
@@ -61,7 +61,7 @@ describe("CODIGO SECRETO - 'JUGADOR A'", () => {
   });
   it("Si jugador A ingresa numero 9165 y el B ingresa 9053 deberia retornar !* ", () => {    
     let juego = new Vaca_Toro();
-    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!*");
+    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!##*");
   });
 });
   
@@ -90,6 +90,6 @@ describe("'AMBOS JUGADORES'", () => {
 describe("'FUNCION TERNERA'", () => {
   it("Si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!*#'", () => {
     let juego = new Vaca_Toro();    
-    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!*#");
+    expect(juego.Comparar_Codigo(9165,9053)).toEqual("!##*");
   });
 });

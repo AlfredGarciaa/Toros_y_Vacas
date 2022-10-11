@@ -22,6 +22,11 @@ class Vaca_Toro {
           output += "*";
           coonf = true;
         }                                    
+      }
+      if((codVec1[i]+1 == codVec2[i]) || (codVec1[i]-1 == codVec2[i])) {
+
+        output += "#";
+        coonf = true;
       }    
     }    
     if(coonf == false) {
@@ -53,6 +58,7 @@ class Vaca_Toro {
         output = this.Unir(this.Separar_Codigo(output).sort()) 
       }
     }
+
     return output;
   }
 
