@@ -88,6 +88,10 @@ describe("'FUNCION TERNERA'", () => {
     let juego = new Vaca_Toro();  
     expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
   });
+  it("(5 DIGITOS) Si jugador A ingresa numero 123 y el B ingresa 234 deberia retornar #****", () => {  
+    let juego = new Vaca_Toro();  
+    expect(juego.Comparar_Codigo(82945,93454)).toEqual("#****");
+  });
 });
 
 describe("'FUNCION BISONTE'", () => {

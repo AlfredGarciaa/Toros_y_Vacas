@@ -1,6 +1,6 @@
 class Vaca_Toro {
 
-  // FUNCION PARA BUSCAR BISONTE \\
+  // FUNCION PARA BUSCAR BISONTE (Buscador de numeros primos) \\
   Busca_Primos(codigo) {
 
     const codVec1 = this.Separar_Codigo(codigo);
@@ -13,6 +13,7 @@ class Vaca_Toro {
     return resp;
   }
 
+  // Verifica si es numero primo \\
   Primo(num) {
 
     for (var i=2; i<num; i++) {
@@ -23,6 +24,7 @@ class Vaca_Toro {
     return num !== 1;
   }
 
+  // Mensaje cuando adivinas \\
   Mensaje_Felicidades() {
 
     return "Felicidades Adivinaste El codigo";
@@ -30,7 +32,9 @@ class Vaca_Toro {
   
   Buscar_Vaca_Toro_Ternera(codigoSecreto,codigoIngresado) {  
 
+    // Para codigo incompatible \\
     let coonf = false;
+
     const codVec1 = this.Separar_Codigo(codigoSecreto);
     const codVec2 = this.Separar_Codigo(codigoIngresado);
     let output = "";
@@ -61,6 +65,7 @@ class Vaca_Toro {
     return output;
   }
 
+  
   Unir(cod) {
 
     let output = "";
