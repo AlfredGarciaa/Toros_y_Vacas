@@ -7,7 +7,7 @@ class Vaca_Toro {
     let resp = "";
     for(var i=0; i<codVec1.length; i++) {
         if(this.Primo(codVec1[i])){
-            resp = "%"
+            resp += "%";
         }
     }   
     return resp;
@@ -65,7 +65,7 @@ class Vaca_Toro {
     return output;
   }
 
-  
+
   Unir(cod) {
 
     let output = "";

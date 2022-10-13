@@ -95,8 +95,12 @@ describe("'FUNCION TERNERA'", () => {
 });
 
 describe("'FUNCION BISONTE'", () => {
-  it("Si jugador A ingresa numero 9165  buscando primos deberia retornar '%'", () => {    
+  it("Si jugador A ingresa numero 67  buscando primos deberia retornar '%'", () => {    
     let juego = new Vaca_Toro(); 
-    expect(juego.Busca_Primos(9165)).toEqual("%");
+    expect(juego.Busca_Primos(67)).toEqual("%");
+  });
+  it("(5 DIGITOS) Si jugador A ingresa numero 70687  buscando primos deberia retornar '%%%'", () => {    
+    let juego = new Vaca_Toro(); 
+    expect(juego.Busca_Primos(70687)).toEqual("%%%");
   });
 });
