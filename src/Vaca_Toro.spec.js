@@ -88,9 +88,15 @@ describe("'FUNCION TERNERA'", () => {
     let juego = new Vaca_Toro();  
     expect(juego.Comparar_Codigo(8125,4065)).toEqual("!#");
   });
-  it("(5 DIGITOS) Si jugador A ingresa numero 123 y el B ingresa 234 deberia retornar #****", () => {  
+
+  //        R E A L I A Z A D O     E N     C L A S E       \\\
+  it("(5 DIGITOS) Si jugador A ingresa numero 82945 y el B ingresa 93454 deberia retornar #****", () => {  
     let juego = new Vaca_Toro();  
     expect(juego.Comparar_Codigo(82945,93454)).toEqual("#****");
+  });
+  it("(6 DIGITOS) Si jugador A ingresa numero 123 y el B ingresa 234 deberia retornar !##**", () => {  
+    let juego = new Vaca_Toro();  
+    expect(juego.Comparar_Codigo(2165,2051)).toEqual("!##**");
   });
 });
 
@@ -99,6 +105,7 @@ describe("'FUNCION BISONTE'", () => {
     let juego = new Vaca_Toro(); 
     expect(juego.Busca_Primos(67)).toEqual("%");
   });
+    //        R E A L I A Z A D O     E N     C L A S E       \\\
   it("(5 DIGITOS) Si jugador A ingresa numero 70687  buscando primos deberia retornar '%%%'", () => {    
     let juego = new Vaca_Toro(); 
     expect(juego.Busca_Primos(70687)).toEqual("%%%");
