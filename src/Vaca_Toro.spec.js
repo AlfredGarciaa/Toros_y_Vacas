@@ -110,4 +110,8 @@ describe("'FUNCION BISONTE'", () => {
     let juego = new Vaca_Toro(); 
     expect(juego.Busca_Primos(70687)).toEqual("%%%");
   });
+  it("(6 DIGITOS) Si jugador A ingresa numero 482731  buscando primos deberia retornar '%%%%'", () => {    
+    let juego = new Vaca_Toro(); 
+    expect(juego.Busca_Primos(482731)).toEqual("%%%%");
+  });
 });
