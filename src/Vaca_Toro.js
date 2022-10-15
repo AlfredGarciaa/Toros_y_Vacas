@@ -1,28 +1,28 @@
 class Vaca_Toro {
 
-  // FUNCION PARA BUSCAR BISONTE (Buscador de numeros primos) \\
-  Busca_Primos(codigo) {
+      // FUNCION PARA BUSCAR BISONTE (Buscador de numeros primos) \\
+      Busca_Primos(codigo) {
 
-    const codVec1 = this.Separar_Codigo(codigo);
-    let resp = "";
-    for(var i=0; i<codVec1.length; i++) {
-        if(this.Primo(codVec1[i])){
-            resp += "%";
-        }
-    }   
-    return resp;
-  }
-
-  // Verifica si es numero primo \\
-  Primo(num) {
-
-    for (var i=2; i<num; i++) {
-      if (num % i === 0) {
-        return false;
+        const codVec1 = this.Separar_Codigo(codigo);
+        let resp = "";
+        for(var i=0; i<codVec1.length; i++) {
+            if(this.Primo(codVec1[i])){
+                resp += "%";
+            }
+        }   
+        return resp;
       }
-    }
-    return num !== 1;
-  }
+
+      // Verifica si es numero primo \\
+      Primo(num) {
+
+        for (var i=2; i<num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return num !== 1;
+      }
 
   // Mensaje cuando adivinas \\
   Mensaje_Felicidades() {
@@ -51,12 +51,12 @@ class Vaca_Toro {
         }                                    
       }
 
-      // FUNCION PARA BUSCAR TERNERA \\
-      if((codVec1[i]+1 == codVec2[i]) || (codVec1[i]-1 == codVec2[i])) {
+          // FUNCION PARA BUSCAR TERNERA \\
+          if((codVec1[i]+1 == codVec2[i]) || (codVec1[i]-1 == codVec2[i])) {
 
-        output += "#";
-        coonf = true;
-      }    
+            output += "#";
+            coonf = true;
+          }    
       
     }    
     if(coonf == false) {
@@ -65,7 +65,7 @@ class Vaca_Toro {
     return output;
   }
 
-
+  // Adjuntar codigo incompleto para tratar de volver a comparar \\
   Unir(cod) {
 
     let output = "";
@@ -76,6 +76,7 @@ class Vaca_Toro {
     return output;
   }    
 
+  // !!! FUNCION PRINCIPAL !!! el cual tiene la funcion segun la logica de direccionar a las demas funciones \\
   Comparar_Codigo(codigoSecreto, codigoIngresado) {
 
     let output = this.Validar_Codigo(codigoIngresado)
@@ -93,6 +94,7 @@ class Vaca_Toro {
     return output;
   }
 
+  // Dividir la cadena de numeros o letras en posiciones de un Vector, para su futura comparacion por elemento. \\
   Separar_Codigo(codigoSecreto) {
 
     let numString = String(codigoSecreto);
@@ -105,6 +107,7 @@ class Vaca_Toro {
     return array;
   }
 
+  // Acepta si no se ingreso ningun codigo \\
   Validar_Codigo(codigo) {
 
     if(codigo == "") {
@@ -113,6 +116,7 @@ class Vaca_Toro {
     return codigo;
   }
 
+  // Generar un codigo numeral aleatorio, INCOMPLETO \\
   Codigo_Secreto_Random() {
 
     let codigoSecreto;

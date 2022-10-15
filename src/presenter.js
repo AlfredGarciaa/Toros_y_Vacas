@@ -14,6 +14,7 @@ const formReiniciar = document.querySelector("#reiniciar-form");
 let secreto;
 let intentos;
 
+// Ingresar codigo secreto y seleccionar numero de intentos \\
 form.addEventListener("submit", (event) => {
 
   event.preventDefault();
@@ -22,6 +23,7 @@ form.addEventListener("submit", (event) => {
   form.reset();
 });
 
+// Numero de intentos y mensaje de adivinacion fallida \\
 form2.addEventListener("submit", (event) => {
 
   event.preventDefault();
@@ -40,6 +42,7 @@ form2.addEventListener("submit", (event) => {
   }
 });
 
+// Boton para generar codigo random, INCOMPLETO \\
 form3.addEventListener("submit", (event) => {
 
   event.preventDefault();
@@ -48,7 +51,7 @@ form3.addEventListener("submit", (event) => {
   form.reset();
 });
 
-
+// Reinicia la pagina \\
 formReiniciar.addEventListener("submit", (event) => 
 {
   event.preventDefault();
